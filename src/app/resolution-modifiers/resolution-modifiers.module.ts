@@ -7,7 +7,7 @@ import { OptionalComponent } from './optional/optional.component';
 import { SelfComponent } from './self/self.component';
 import { SelfNoDataComponent } from './self-no-data/self-no-data.component';
 import { SkipSelfComponent } from './skip-self/skip-self.component';
-import { ResolutionModifiersComponent } from './resolution-modifiers/resolution-modifiers.component';
+import { ResolutionModifiersComponent } from './resolution-modifiers.component';
 
 
 
@@ -24,6 +24,12 @@ import { ResolutionModifiersComponent } from './resolution-modifiers/resolution-
   ],
   imports: [
     CommonModule
+  ],
+  exports:[
+    ResolutionModifiersComponent,
+    HostComponent,
+    HostChildComponent,
+    HostParentComponent,
   ]
 })
 export class ResolutionModifiersModule { }

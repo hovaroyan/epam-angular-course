@@ -1,0 +1,8 @@
+.resolution-modifiers{
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid black;
+    align-items: center;
+    padding-top: 20px;
+    background-color: lightblue;
+}

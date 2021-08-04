@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FlowerService } from '../flower.service';
 
 @Component({
   selector: 'app-host-child',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HostChildComponent implements OnInit {
 
-  constructor() { }
+  constructor(public flower: FlowerService) { }
 
   ngOnInit(): void {
   }

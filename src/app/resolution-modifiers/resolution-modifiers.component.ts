@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FlowerService } from './flower.service';
+import { LeafService } from './leaf.service';
 
 @Component({
   selector: 'app-resolution-modifiers',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResolutionModifiersComponent implements OnInit {
 
-  constructor() { }
+  constructor(public flower: FlowerService, public leaf: LeafService) { }
 
   ngOnInit(): void {
   }
