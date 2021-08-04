@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ProvidersViewProvidersModule } from './providers-view-providers/providers-view-providers.module';
+import { ResolutionModifiersModule } from './resolution-modifiers/resolution-modifiers.module';
 import { AppComponent } from './app.component';
 
 
@@ -10,7 +11,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    ProvidersViewProvidersModule
+    ProvidersViewProvidersModule,
+    ResolutionModifiersModule
   ],
   providers: [],
   bootstrap: [AppComponent]
