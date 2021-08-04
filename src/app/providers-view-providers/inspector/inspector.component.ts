@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FlowerService } from '../flower.service';
+import { AnimalService } from '../animal.service';
 
 @Component({
   selector: 'app-inspector',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InspectorComponent implements OnInit {
 
-  constructor() { }
+  constructor(public flower: FlowerService, public animal: AnimalService) { }
 
   ngOnInit(): void {
   }
