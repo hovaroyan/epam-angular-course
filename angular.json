@@ -98,7 +98,15 @@
             ],
             "scripts": []
           }
-        }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://hovaroyan.github.io/epam-angular-course/",
+            "name": "epam-angular-course",
+            "email": "hovaroyan@gmail.com"
+            }
+          }
       }
     }
   },
